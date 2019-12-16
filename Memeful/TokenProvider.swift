@@ -21,9 +21,7 @@ class TokenProvider {
     static let shared = TokenProvider()
     weak var tokenDelegate: TokenDelegate?
     
-    private init() {
-        
-    }
+    private init() {}
 
     func parseToken(url: URL) {
         if let urlComponents = url.absoluteString.components(separatedBy:"#").last {

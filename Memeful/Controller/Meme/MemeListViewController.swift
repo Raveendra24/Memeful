@@ -21,6 +21,7 @@ class MemeListViewController: UIViewController {
     }
     
     private func setup() {
+        self.title = "Most Viral"
         if let layout = listCollectionView?.collectionViewLayout as? CustomCollectionViewLayout {
             layout.delegate = self
         }
