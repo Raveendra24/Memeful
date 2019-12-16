@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
 
     override func viewDidLoad() {
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: TokenDelegate {
+extension LoginViewController: TokenDelegate {
     func loginSuccessfull() {
         let listVC = self.storyboard?.instantiateViewController(withIdentifier: "MemeListViewController") as! MemeListViewController
         self.navigationController?.pushViewController(listVC, animated: true)

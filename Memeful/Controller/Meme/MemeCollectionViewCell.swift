@@ -28,7 +28,7 @@ class MemeCollectionViewCell: UICollectionViewCell {
             self.memePoint.text = String(describing: points) + " points"
         }
        
-        self.meme.kf.setImage(with: URL(string: data.link ?? ""), placeholder: nil, options: [], progressBlock: nil) { (result) in
+        self.meme.kf.setImage(with: URL(string: data.link ?? ""), placeholder:#imageLiteral(resourceName: "placeholder"), options: [], progressBlock: nil) { (result) in
             switch result {
             case .success:
                 break

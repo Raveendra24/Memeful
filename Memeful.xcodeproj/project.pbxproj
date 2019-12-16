@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		354FEB94EB1284896DF2B7E1 /* libPods-Memeful.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE00B6B6C2E66B22EA6CFE31 /* libPods-Memeful.a */; };
 		9B21F49D23A541F9001F4A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21F49C23A541F9001F4A15 /* AppDelegate.swift */; };
-		9B21F49F23A541F9001F4A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21F49E23A541F9001F4A15 /* ViewController.swift */; };
+		9B21F49F23A541F9001F4A15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21F49E23A541F9001F4A15 /* LoginViewController.swift */; };
 		9B21F4A223A541F9001F4A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B21F4A023A541F9001F4A15 /* Main.storyboard */; };
 		9B21F4A523A541F9001F4A15 /* Memeful.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B21F4A323A541F9001F4A15 /* Memeful.xcdatamodeld */; };
 		9B21F4A723A541FB001F4A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B21F4A623A541FB001F4A15 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		6E78C96B5C33A12AC21E6460 /* Pods-Memeful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memeful.release.xcconfig"; path = "Target Support Files/Pods-Memeful/Pods-Memeful.release.xcconfig"; sourceTree = "<group>"; };
 		9B21F49923A541F9001F4A15 /* Memeful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memeful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B21F49C23A541F9001F4A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B21F49E23A541F9001F4A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B21F49E23A541F9001F4A15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B21F4A123A541F9001F4A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B21F4A423A541F9001F4A15 /* Memeful.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memeful.xcdatamodel; sourceTree = "<group>"; };
 		9B21F4A623A541FB001F4A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		9B21F4BF23A541FB001F4A15 /* MemefulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemefulUITests.swift; sourceTree = "<group>"; };
 		9B21F4C123A541FB001F4A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B37E75A23A64D8D008C588D /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B37E75F23A66A9B008C588D /* TokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenProvider.swift; sourceTree = "<group>"; };
+		9B37E75F23A66A9B008C588D /* TokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokenProvider.swift; path = ../TokenProvider.swift; sourceTree = "<group>"; };
 		9B37E76523A69330008C588D /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9B37E76623A69330008C588D /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		9B37E76923A69604008C588D /* NetworkContentTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkContentTypes.swift; sourceTree = "<group>"; };
@@ -153,13 +153,9 @@
 			children = (
 				9B37E76C23A69D3A008C588D /* Model */,
 				9B8546A023A6AE7F0093093C /* Network Manager */,
-				9B21F49C23A541F9001F4A15 /* AppDelegate.swift */,
-				9B37E75F23A66A9B008C588D /* TokenProvider.swift */,
-				9B21F49E23A541F9001F4A15 /* ViewController.swift */,
+				9BAA619623A80D7800025A6D /* Controller */,
+				9BAA619523A80D1E00025A6D /* Core */,
 				9B21F4A023A541F9001F4A15 /* Main.storyboard */,
-				9BAC8FE723A6CF9700C64A27 /* CustomerCollectionViewLayout.swift */,
-				9B8546A123A6B1AB0093093C /* MemeListViewController.swift */,
-				9B8546A323A6B50B0093093C /* MemeCollectionViewCell.swift */,
 				9B21F4A623A541FB001F4A15 /* Assets.xcassets */,
 				9B21F4A823A541FB001F4A15 /* LaunchScreen.storyboard */,
 				9B21F4AB23A541FB001F4A15 /* Info.plist */,
@@ -202,6 +198,42 @@
 				9B37E76623A69330008C588D /* NetworkRouter.swift */,
 			);
 			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		9BAA619523A80D1E00025A6D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9B37E75F23A66A9B008C588D /* TokenProvider.swift */,
+				9B21F49C23A541F9001F4A15 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9BAA619623A80D7800025A6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BAA619823A80DB400025A6D /* Meme */,
+				9BAA619723A80D9700025A6D /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9BAA619723A80D9700025A6D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9B21F49E23A541F9001F4A15 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9BAA619823A80DB400025A6D /* Meme */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC8FE723A6CF9700C64A27 /* CustomerCollectionViewLayout.swift */,
+				9B8546A123A6B1AB0093093C /* MemeListViewController.swift */,
+				9B8546A323A6B50B0093093C /* MemeCollectionViewCell.swift */,
+			);
+			path = Meme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B21F49F23A541F9001F4A15 /* ViewController.swift in Sources */,
+				9B21F49F23A541F9001F4A15 /* LoginViewController.swift in Sources */,
 				9B21F49D23A541F9001F4A15 /* AppDelegate.swift in Sources */,
 				9B37E76E23A69D4B008C588D /* MostViral.swift in Sources */,
 				9B37E76823A69330008C588D /* NetworkRouter.swift in Sources */,
